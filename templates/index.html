@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<body>
+		<h1 class="text-5xl font-medium leading-tight mt-0 mb-2 text-blue-600">Heroes</h1>
+
+		{% if hero_list %}
+			{% for hero in hero_list %}
+	  			<li> {{ hero[0] }} </li>
+	  		{% endfor %}
+		{% endif %}
+
+	</body>
+</html>
+{% endblock %}
